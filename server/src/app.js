@@ -10,8 +10,10 @@ app.use(cors())
 
 
 
-app.get('/status' , function(req,res){
-    res.send('tnawet')
+app.post('/register' , function(req,res){
+    res.send({
+        message : `the  user : ${req.body.email}  is registered`
+    })
 
 })
 
